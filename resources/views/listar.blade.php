@@ -40,50 +40,52 @@
 
             <div class="row">
                 <div class="col">
-                    <table class="table">
-                        <thead class="table-primary">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Telefone</th>
-                                <th scope="col">Origem</th>
-                                <th scope="col">Data de Contato</th>
-                                <th scope="col">Observação</th>
-                            </tr>
-                        </thead>
+                    <div class="overflow-auto">
+                        <table class="table">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Telefone</th>
+                                    <th scope="col">Origem</th>
+                                    <th scope="col">Data de Contato</th>
+                                    <th scope="col">Observação</th>
+                                </tr>
+                            </thead>
 
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            </tr>
-                            <tr>
-                            <tr>
-                            <th scope="row">3</th>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            </tr>
-                           
-                        </tbody>
-                    </table>
+                            <tbody>
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Eu</td>
+                                <td> (xx)xxxx-xxxx </td>
+                                <td> Celular </td>
+                                <td> 13/03/2024 </td>
+                                <td> Testeando o text area</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-
+          </div>
 
         <div>
     </body>
