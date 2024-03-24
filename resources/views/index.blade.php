@@ -9,8 +9,9 @@
   
 </head>
     <body>
+       
         <div class="container">
-
+        
             <div class="row">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
@@ -39,36 +40,40 @@
 
             <div class="row">
                 <div class="col">
-                    <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite o nome">
-                    </div>
+                    <form method="POST" action="/adicionar">
+                    @csrf
+                        <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" name="nome" id="exampleFormControlInput1" placeholder="Digite o nome">
+                        </div>
 
-                    <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(xx)xxxxx-xxxx">
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Origem:</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Selecione uma opção</option>
-                            <option value="1">Celular</option>
-                            <option value="2">Telefone Fixo</option>
-                        </select>
-                    </div>
+                        <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
+                                <input type="text" class="form-control" name="telefone" id="exampleFormControlInput1" placeholder="(xx)xxxxx-xxxx">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Origem:</label>
+                            <input type="text" class="form-control" name="origem" id="exampleFormControlInput1" >
+                           <!-- <select class="form-select"  aria-label="Default select example">
+                                <option selected>Selecione uma opção</option>
+                                <option name="origem" value="Celular">Celular</option>
+                                <option name="origem" value="Telefone Fixo">Telefone Fixo</option>
+                            </select>-->
+                        </div>
 
-                    <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Data do Contato:</label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1" >
-                    </div>
+                        <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Data do Contato:</label>
+                                <input type="date" class="form-control" name="datacontato" id="exampleFormControlInput1" >
+                        </div>
 
-                    <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Observação </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                        <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Observação </label>
+                                <textarea class="form-control" name="observacoes" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
 
-                    <button type="button" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
                 </div>
             </div>
 
