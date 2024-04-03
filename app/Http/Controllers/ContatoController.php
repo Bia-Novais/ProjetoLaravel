@@ -10,7 +10,7 @@ class ContatoController extends Controller
     
     public function index(Request $req){
         $contato = Contato::all();
-        return view('index')->with("contato", $contato);
+        return view('welcome')->with("contato", $contato);
     }
 
     public function adicionar(Request $req){
@@ -24,7 +24,7 @@ class ContatoController extends Controller
         return redirect()->back();
     }
 
-    public function editar($id){
+    public function editar(Request $req){
         //find = o select form * contatos where id = id 
         $contato = Contato::find($req->id);
         return view('editar')->with("contato", $contato);

@@ -40,7 +40,7 @@
 
             <div class="row">
                 <div class="col">
-                    <form method="POST" action="/atualizar{{$contato->id}}">
+                    <form method="POST" action="/atualizar/{{$contato->id}}">
                     @csrf
                         <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Nome:</label>
@@ -54,12 +54,11 @@
                         
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Origem:</label>
-                            <input type="text" class="form-control" name="origem" id="exampleFormControlInput1" >
-                           <!-- <select class="form-select"  aria-label="Default select example">
-                                <option selected>Selecione uma opção</option>
-                                <option name="origem" value="Celular">Celular</option>
-                                <option name="origem" value="Telefone Fixo">Telefone Fixo</option>
-                            </select>-->
+                                <select class="form-select" name="origem" aria-label="Default select example">
+                                    <option selected>Selecione uma opção</option>
+                                    <option  value="{{$contato->celular}}">Celular</option>
+                                    <option  value="{{$contato->telefone}}">Telefone Fixo</option>
+                                </select>
                         </div>
 
                         <div class="mb-3">
@@ -69,10 +68,10 @@
 
                         <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Observação </label>
-                                <textarea class="form-control" name="observacoes" value="{{$contato->observacoes}}" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" name="observacoes" id="exampleFormControlTextarea1" rows="3">{{$contato->observacoes}}</textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary">Atualizar</button>
                     </form>
                 </div>
             </div>
